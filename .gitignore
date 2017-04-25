@@ -1,4 +1,8 @@
-*
+#*
+#!/.emacs.d
+#!.emacs
+#!.emacs*
+
+/*
 !/.emacs.d
-!.emacs
-!.emacs*
+/.emacs.d/*
