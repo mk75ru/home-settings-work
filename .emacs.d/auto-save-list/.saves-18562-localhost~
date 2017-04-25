@@ -1,0 +1,4 @@
+/var/log/messages
+/var/log/#messages#
+/var/log/pm-powersave.log
+/var/log/#pm-powersave.log#

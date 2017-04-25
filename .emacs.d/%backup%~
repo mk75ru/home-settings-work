@@ -1,0 +1,16 @@
+# /etc/ax25/axports
+#
+# The format of this file is:
+#
+# name callsign speed paclen window description
+#
+
+#1	OH2BNS-1	1200	255	2	144.675 MHz (1200  bps)
+#2	OH2BNS-9	38400	255	7	TNOS/Linux  (38400 bps)
+
+r0  	KONTUR-1	115200   255	7	TNC1
+r1      KONTUR-2	115200   255	7	TNC2
+
+
+#sl0     KONTUR-1	9600   255	7	TNC1
+#sl1     KONTUR-2	9600   255	7	TNC2
