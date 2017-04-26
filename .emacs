@@ -2,7 +2,7 @@
 ;; Personal settings for Emacs.
 
 ;;C++ IDE
-(load-file "~/.emacs.d/init.el")
+;;(load-file "~/.emacs.d/init.el")
 
 
 ;;C++ / Python Development Environment for Emacs 
