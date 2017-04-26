@@ -1,1 +1,1 @@
-("~/" "~/.emacs.d/" "~/dvl/prj/app/alarm-kugo/")
+("~/" "~/dvl/prj/app/alarm-kugo/" "~/.emacs.d/")
