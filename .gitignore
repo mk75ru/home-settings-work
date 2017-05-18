@@ -1,2 +1,5 @@
 /*
 !/.emacs*
+.emacs.d/auto-save-list
+.emacs.d/places
+.emacs.d/url/cache
