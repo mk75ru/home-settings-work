@@ -4,6 +4,73 @@
 ;;C++ IDE
 ;;(load-file "~/.emacs.d/init-ide-cpp.el")
 
+;;C++ IDE (require 'package)
+;;C++ IDE (add-to-list 'package-archives
+;;C++ IDE          '("melpa" . "http://melpa.org/packages/") t)
+;;C++ IDE
+;;C++ IDE (package-initialize)
+;;C++ IDE
+;;C++ IDE (when (not package-archive-contents)
+;;C++ IDE     (package-refresh-contents))
+;;C++ IDE
+;;C++ IDE (unless (package-installed-p 'use-package)
+;;C++ IDE   (package-install 'use-package))
+;;C++ IDE
+;;C++ IDE (require 'use-package)
+;;C++ IDE (setq use-package-always-ensure t)
+;;C++ IDE
+;;C++ IDE (add-to-list 'load-path "~/.emacs.d/custom")
+;;C++ IDE
+;;C++ IDE (require 'setup-general)
+;;C++ IDE (if (version< emacs-version "24.4")
+;;C++ IDE     (require 'setup-ivy-counsel)
+;;C++ IDE   (require 'setup-helm)
+;;C++ IDE   (require 'setup-helm-gtags))
+;;C++ IDE ;; (require 'setup-ggtags)
+;;C++ IDE (require 'setup-cedet)
+;;C++ IDE (require 'setup-editing)
+;;C++ IDE
+;;C++ IDE
+;;C++ IDE
+;;C++ IDE ;; function-args
+;;C++ IDE ;; (require 'function-args)
+;;C++ IDE ;; (fa-config-default)
+;;C++ IDE ;; (define-key c-mode-map  [(tab)] 'company-complete)
+;;C++ IDE ;; (define-key c++-mode-map  [(tab)] 'company-complete)
+;;C++ IDE (custom-set-variables
+;;C++ IDE  ;; custom-set-variables was added by Custom.
+;;C++ IDE  ;; If you edit it by hand, you could mess it up, so be careful.
+;;C++ IDE  ;; Your init file should contain only one such instance.
+;;C++ IDE  ;; If there is more than one, they won't work right.
+;;C++ IDE  '(package-selected-packages
+;;C++ IDE    (quote
+;;C++ IDE     (zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu))))
+;;C++ IDE (custom-set-faces
+;;C++ IDE  ;; custom-set-faces was added by Custom.
+;;C++ IDE  ;; If you edit it by hand, you could mess it up, so be careful.
+;;C++ IDE  ;; Your init file should contain only one such instance.
+;;C++ IDE  ;; If there is more than one, they won't work right.
+;;C++ IDE  )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ;;C++ / Python Development Environment for Emacs 
 ;;(load-file "~/.emacs.d/emacs/init.el")
@@ -28,7 +95,7 @@
 ;;Cedet
 ;;(load-file "~/.emacs.d/cedet.d/cedet.1.1.d/cedet-1.1-startup.el")
 ;;(load-file "/home/miha/.emacs.d/cedet.d/cedet.old.d/rc-cedet2.el")
-;;TMP (load-file "~/.emacs.d/cedet.d/cedet-bzr.d/emacs-rc-cedet.el")
+(load-file "~/.emacs.d/cedet.d/cedet-bzr.d/emacs-rc-cedet.el")  ;;Выключить если включаем C++ IDE.
 
 
 ;; ECB
@@ -74,7 +141,7 @@
 ;; (load-file "/home/miha/.emacs.d/yasnippet.d/yasnippet.el")
 
 ;;; auto complete mod
-;;(load-file "/home/miha/.emacs.d/autocomplete-clang.d/auto-complete-clang.el")
+(load-file "/home/miha/.emacs.d/autocomplete-clang.d/auto-complete-clang.el")  ;;Выключить если включаем C++ IDE.
 
 ;;(load-file "/home/miha/.emacs.d/valgrind.el")
 
@@ -275,3 +342,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "fixed" :foundry "misc" :slant normal :weight normal :height 78 :width normal)))))
+
+
+(add-to-list 'same-window-buffer-names "*compilation*")
+(global-set-key (kbd "<f5>") #'compile)

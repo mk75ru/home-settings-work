@@ -2,20 +2,22 @@
 ;; Automatically generated file!!! DO NOT EDIT!!!
 
 (setq url-cookie-storage
- '((".google.ru"
-  [url-cookie "NID" "100=fzc8c42qOuPJAn6fKZcWNK10qjEfs0b5usXyYTEZaZC_DYc4TDfXA4DKXEp4QWVkYiF4PhkFg0qfk7P0bN-5j5zhtB2ULFwkpuh35dP2ayzhe_4uPMF-I9DLMFWCW57U" "04-Oct-2017 10:20:13.00 GMT" "/" ".google.ru" nil]
-  [url-cookie "HttpOnly" nil "04-Oct-2017 10:20:13.00 GMT" "/" ".google.ru" nil])
+ '(("www.interfax.ru"
+  [url-cookie "IF" "UseR=402387868" "31-Dec-2029 21:00:00.00 GMT" "/" "www.interfax.ru" nil])
  (".youtube.com"
-  [url-cookie "PREF" "f1=50000000" "03-Dec-2017 22:19:49.00 GMT" "/" ".youtube.com" nil]
-  [url-cookie "VISITOR_INFO1_LIVE" "HeVqsJuzJC0" "03-Dec-2017 22:19:48.00 GMT" "/" ".youtube.com" nil])
- ("www.interfax.ru"
-  [url-cookie "IF" "UseR=402387868" "31-Dec-2029 21:00:00.00 GMT" "/" "www.interfax.ru" nil]))
+  [url-cookie "VISITOR_INFO1_LIVE" "HeVqsJuzJC0" "03-Dec-2017 22:19:48.00 GMT" "/" ".youtube.com" nil]
+  [url-cookie "PREF" "f1=50000000" "03-Dec-2017 22:19:49.00 GMT" "/" ".youtube.com" nil])
+ ("bash.im"
+  [url-cookie "ls_index" "%7B%22ts%22%3A1502053199%2C%22cnt%22%3A63999%2C%22id%22%3A446133%7D" "21-Aug-2017 10:48:13.00 GMT" "/" "bash.im" nil]
+  [url-cookie "ls_comics" "%7B%22ts%22%3A1502053199%2C%22cnt%22%3A1566%2C%22id%22%3A20170804%7D" "21-Aug-2017 10:48:13.00 GMT" "/" "bash.im" nil]
+  [url-cookie "ls_abyssbest" "%7B%22ts%22%3A1502053199%2C%22cnt%22%3A4737%2C%22id%22%3A298567%7D" "21-Aug-2017 10:48:13.00 GMT" "/" "bash.im" nil])
+ (".google.ru"
+  [url-cookie "HttpOnly" nil "04-Oct-2017 10:20:13.00 GMT" "/" ".google.ru" nil]
+  [url-cookie "NID" "100=fzc8c42qOuPJAn6fKZcWNK10qjEfs0b5usXyYTEZaZC_DYc4TDfXA4DKXEp4QWVkYiF4PhkFg0qfk7P0bN-5j5zhtB2ULFwkpuh35dP2ayzhe_4uPMF-I9DLMFWCW57U" "04-Oct-2017 10:20:13.00 GMT" "/" ".google.ru" nil]))
 )
 (setq url-cookie-secure-storage
  '((".avito.ru"
-  [url-cookie "sessid" "aa36c8b8ea479bdf28771381084003bb.1498538951" "28-Jun-2017 04:49:11.00 GMT" "/" ".avito.ru" t]
-  [url-cookie "u" "26duydlr.myw8sd.fgzny2aje5" "27-Jun-2019 04:49:11.00 GMT" "/" ".avito.ru" t]
-  [url-cookie "dfp_group" "28" "28-Jul-2017 04:49:11.00 GMT" "/" ".avito.ru" t]))
+  [url-cookie "u" "26duydlr.myw8sd.fgzny2aje5" "27-Jun-2019 04:49:11.00 GMT" "/" ".avito.ru" t]))
 )
 
 ;; Local Variables:
