@@ -312,6 +312,7 @@
 ;;(start-process "" nil "xdg-open" "http://google.com")
 
 
+;;chess  ---------------------------------------------------------
 (let ((chessdir (expand-file-name
 		 "~/emacs/lisp/chess")))
   (when (file-directory-p chessdir)
@@ -325,10 +326,35 @@
    chess-plain-draw-border t
    chess-plain-white-square-char 15
    chess-plain-spacing 0))
+;;----------------------------------------------------------------
+
 
 ;;cmake-ide
+
+;;rtags ---------------------------------------------------------
 ;;newcom (require 'rtags) ;; optional, must have rtags installed
 ;;newcom (cmake-ide-setup)
+;;--------------------------------------------------------------
+
+;;rtags  Source code navigation using RTags ------------------------
+;;Install rtags from MELPA and add the following to your emacs init file:
+;;(require 'rtags)
+;;(require 'company-rtags)
+;;
+;;(setq rtags-completions-enabled t)
+;;(eval-after-load 'company
+;;  '(add-to-list
+;;    'company-backends 'company-rtags))
+;;(setq rtags-autostart-diagnostics t)
+;;(rtags-enable-standard-keybindings)
+;;;;To enable Helm integration add:
+;;(require 'rtags-helm)
+;;(setq rtags-use-helm t)
+
+
+;;--------------------------------------------------------------
+
+;;custom-set-variables -----------------------------------------
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -336,13 +362,25 @@
  ;; If there is more than one, they won't work right.
  '(save-place t nil (saveplace))
  '(show-paren-mode t))
+;;--------------------------------------------------------------
+
+;;custom-set-faces ---------------------------------------------
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "fixed" :foundry "misc" :slant normal :weight normal :height 78 :width normal)))))
+;;--------------------------------------------------------------
 
-
-(add-to-list 'same-window-buffer-names "*compilation*")
+;;compilation ------------------------------------------------- 
+(add-to-list 'same-window-buffer-names "*compilation*") 
 (global-set-key (kbd "<f5>") #'compile)
+;;--------------------------------------------------------------
+
+
+
+(setq org-capture-templates
+      (quote (
+                    ("x" "org-protocol" entry (file "~/web.org")
+                                   "* TODO Review %c\n%U\n%i\n" :immediate-finish))))
