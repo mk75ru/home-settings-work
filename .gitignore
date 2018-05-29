@@ -4,3 +4,4 @@
 .emacs.d/places
 .emacs.d/url/cache
 !org
+!.gentoo-update.sh

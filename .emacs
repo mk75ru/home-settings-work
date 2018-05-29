@@ -384,3 +384,7 @@
       (quote (
                     ("x" "org-protocol" entry (file "~/web.org")
                                    "* TODO Review %c\n%U\n%i\n" :immediate-finish))))
+
+
+(setq special-display-buffer-names
+      '("*grep*"))
