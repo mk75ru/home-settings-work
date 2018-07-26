@@ -105,10 +105,10 @@
                                    "* TODO Review %c\n%U\n%i\n" :immediate-finish))))
 
 (setq special-display-buffer-names
-      '("*grep*"))
+      '("*grep*" "*compilation*"))
 
-(setq special-display-buffer-names
-      '("*compilation*"))
+;;(setq special-display-buffer-names
+;;     '("*compilation*"))
 
 ;;Контроль версий ???
 (defun toogle-vc ()
@@ -164,5 +164,10 @@
 (global-set-key (kbd "<f5>") #'compile)
 ;;--------------------------------------------------------------
 
-
-
+;;автодополнение
+;;(req-package company
+;;  :config
+;;  (progn
+;;    (add-hook 'after-init-hook 'global-company-mode)
+;;    (global-set-key (kbd "M-/") 'company-complete-common-or-cycle)
+;;    (setq company-idle-delay 0)))
