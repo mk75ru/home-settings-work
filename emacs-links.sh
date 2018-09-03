@@ -9,6 +9,8 @@ ln -s -T  ~/home-settings-work/.gitignore  ../.gitignore
 ln -s -T  ~/home-settings-work/.git-remove-submodule  ../.git-remove-submodule
 ln -s -T  ~/home-settings-work/.xinitrc  ../.xinitrc
 ln -s -T  ~/home-settings-work/.emacs_work  ../.emacs
+ln -s -T  ~/home-settings-work/org_work  ../org
+
 
 
 

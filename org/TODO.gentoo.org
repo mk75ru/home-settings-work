@@ -1,1 +1,0 @@
-* TODO Нужно разобраться с emerge-depclean (c perl  и версией исходника linux)

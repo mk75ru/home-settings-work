@@ -1,9 +1,0 @@
-#+STARTUP:  showall
-#+STARTUP: hidestars
-#+TAGS: ОБРАЗОВАНИЕ(o) ПРОЕКТЫ(p) ДОМ(h)
-
-* TODO Тест org-mode 1 		:ОБРАЗОВАНИЕ:
-* TODO Тест org-mode 2		:ДОМ:ПРОЕКТЫ:
-
-
-
