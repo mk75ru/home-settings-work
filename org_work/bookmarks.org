@@ -1,0 +1,3 @@
+* wejoijwefiefjoewe 
+
+file:~/home-settings-mk/.emacs_mk.el::;;%20"*%20TODO%20%25?\n%25U\n%25a\n"%20:clock-in%20t%20:clock-resume%20t)
