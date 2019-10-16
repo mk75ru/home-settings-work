@@ -15,8 +15,6 @@
 ***** Запускаем gprs каналы
 ***** Ждем появления ppp интерфейсов
 
-
-
 * Порядок реконфига в случае потери интерфейса 
 ** Для gprs: 
 *** Спим N секунд
@@ -36,19 +34,33 @@
 **** Если на нескольких интерфейсах ppp трафик не растет в течении N минут
 ***** Выполняем перезапуск gprs модулей(<список мертвых каналов>)
 
-* ipnotifyd
-** Шлюз на интерфейсе При появлении(изменении) IP интерфейса.
-** Перезапуск при изменении конфига
-** Интерфейсы
-*** gprs(ppp) 
-*** openvpn(tun/tap) 
-*** ethernet(eth0/usbeth0/usbeth1)
+* <Маршрутизация> и <Привязка к источникам>
+** Либо ipnotifyd
+*** Добавим RTM_NEWROUTE, RTM_DELROUTE, RTM_GETROUTE  [[http://man7.org/linux/man-pages/man7/rtnetlink.7.html]] для шлюзов
+*** Материалы по netlink (тег в firefox C++netlink)
+**** https://github.com/Quagga/quagga/blob/88d6516676cbcefb6ecdc1828cf59ba3a6e5fe7b/zebra/rt_netlink.c
+**** https://github.com/Quagga/quagga/blob/88d6516676cbcefb6ecdc1828cf59ba3a6e5fe7b/zebra/zebra_fpm_netlink.c
+**** https://github.com/slankdev/routerd/tree/d5dcae6ed613126600dec7b8b0801634ed03deed
+**** https://www.opennet.ru/man.shtml?topic=netlink&category=7&russian=0
+**** https://www.opennet.ru/cgi-bin/opennet/man.cgi?topic=rtnetlink&category=7
 
-
+*** Меняем <МаршрутПоУмолчанию> интерфейса при изменении <ОбщегоМаршрутаПоУмолчанию>.
+*** Добавляем в конфиги сетевых приложений <ip источника> при изменении ip интерфейса  сетевого приложения или vpn-канала
+*** Перезапуск при изменении конфига следующих приложений:
+**** Интерфейсы
+***** gprs_config(ppp) 
+***** openvpn_config(tun/tap) 
+***** ethernet_config(eth0/usbeth0/usbeth1)
+**** Сетевые приложения
+***** communch-ip_config
+** Либо вместо  ipnotifyd делаем маршруты по портам 
+*** В этом случае к источнику не привязываем а заводим приложение мониторящее изменение конфига по inotify
+*** и когда изменяется порт перенастраиваем таблицу маршрутицации
 
 * Добавить произвольные опции в генератор конфигов из json файлов(для отдельного канала и общие)
 
 * Перевести на json каналы связи и интерфейсы
+
 
 
 
